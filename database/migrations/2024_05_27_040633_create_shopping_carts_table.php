@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->foreignId('user_id')->constrained();
             $table->foreignId('product_detail_id')->constrained();
-            $table->foreignId('amount')->constrained();
+            $table->unsignedBigInteger('amount');
         });
     }
 
