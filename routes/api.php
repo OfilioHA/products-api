@@ -21,6 +21,8 @@ Route::middleware(['auth:sanctum'])->group(function () {
     });
 
     Route::apiResource('users', UserController::class);
+    Route::get('products/shopping-cart', [ProductController::class, 'shoppingCart']);
+    Route::get('products/wish-list', [ProductController::class, 'wishList']);
     Route::apiResource('products', ProductController::class);
 });
 
