@@ -2,7 +2,6 @@
 
 namespace Database\Seeders;
 
-use App\Models\User;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -22,7 +21,10 @@ class DatabaseSeeder extends Seeder
             ProductSeeder::class,
             ProductDetailSeeder::class,
             ShoppingCartSeeder::class,
-            WishListSeeder::class
+            WishListSeeder::class,
+            AddressSeeder::class,
+            PersonSeeder::class,
+            ReviewSeeder::class
         ]);
     }
 }
